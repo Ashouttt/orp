@@ -39,7 +39,6 @@
             cursor: crosshair;
         }
 
-        /* Animated background canvas */
         #particle-canvas {
             position: fixed;
             top: 0;
@@ -50,7 +49,6 @@
             pointer-events: none;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -111,7 +109,6 @@
             width: 100%;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -214,7 +211,6 @@
             transform: translateY(-3px);
         }
 
-        /* Floating elements */
         .floating-orb {
             position: absolute;
             border-radius: 50%;
@@ -251,7 +247,6 @@
             animation-delay: -2s;
         }
 
-        /* Sections */
         section {
             position: relative;
             z-index: 1;
@@ -282,7 +277,6 @@
             margin: 0 auto;
         }
 
-        /* Features Grid */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -351,7 +345,6 @@
             line-height: 1.7;
         }
 
-        /* Stats Section */
         .stats {
             background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.03), transparent);
         }
@@ -386,7 +379,6 @@
             letter-spacing: 2px;
         }
 
-        /* CTA Section */
         .cta {
             text-align: center;
             position: relative;
@@ -431,7 +423,6 @@
             margin: 0 auto 2rem;
         }
 
-        /* Footer */
         footer {
             border-top: 1px solid rgba(255,255,255,0.05);
             padding: 3rem 5%;
@@ -447,7 +438,6 @@
             display: inline-block;
         }
 
-        /* Scroll animations */
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -459,7 +449,6 @@
             transform: translateY(0);
         }
 
-        /* Keyframes */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -488,32 +477,26 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
             .hero h1 {
                 font-size: 2.5rem;
             }
-
             section {
                 padding: 5rem 5%;
             }
-
             .btn-group {
                 flex-direction: column;
                 align-items: center;
             }
-
             .btn {
                 width: 100%;
                 justify-content: center;
             }
         }
 
-        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -531,91 +514,90 @@
 <body>
     <canvas id="particle-canvas"></canvas>
 
-    <!-- Floating Orbs -->
     <div class="floating-orb orb-1"></div>
     <div class="floating-orb orb-2"></div>
     <div class="floating-orb orb-3"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">ORP</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#stats">Stats</a></li>
-            <li><a href="#play">Play Now</a></li>
+            <li><a href="#download">Download</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="badge">Roblox Experience</div>
+            <div class="badge">Standalone App</div>
             <h1><span class="gradient-text">Obby Revival</span><br>Project</h1>
-            <p>The ultimate obby experience reborn. Challenge yourself through hundreds of creatively designed stages with modern mechanics and stunning visuals.</p>
+            <p>The ultimate obby experience on your desktop. Play, create, and share obstacle courses with authentic Roblox-like physics and mechanics.</p>
             <div class="btn-group">
-                <a href="#play" class="btn btn-primary">
-                    <span>Play on Roblox</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="#download" class="btn btn-primary">
+                    <span>Download Now</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 </a>
                 <a href="#features" class="btn btn-secondary">Explore Features</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-header reveal">
                 <h2>Reviving the <span class="gradient-text">Classics</span></h2>
-                <p>Obby Revival Project takes everything you loved about classic Roblox obstacle courses and elevates it with modern design, smooth mechanics, and endless replayability.</p>
+                <p>Obby Revival Project brings the obby experience to your desktop. No browser needed, no lag, just pure obstacle course gameplay with tools to create and share your own stages.</p>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section id="features">
         <div class="container">
             <div class="section-header reveal">
                 <h2>Why Play <span class="gradient-text">ORP?</span></h2>
-                <p>Built for competitive obby players and casual enjoyers alike.</p>
+                <p>Everything you need for the ultimate obby experience, right on your PC.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card reveal">
-                    <div class="feature-icon">&#9889;</div>
-                    <h3>Smooth Mechanics</h3>
-                    <p>Refined movement systems with responsive controls, optimized physics, and frame-perfect consistency for competitive play.</p>
-                </div>
-                <div class="feature-card reveal">
                     <div class="feature-icon">&#127942;</div>
-                    <h3>Leaderboards</h3>
-                    <p>Compete with players worldwide on global leaderboards. Track your personal bests and climb the ranks.</p>
+                    <h3>Top 100 Obbies List</h3>
+                    <p>Discover the best community-made obbies ranked by difficulty, rating, and popularity. New stages added daily by players worldwide.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <div class="feature-icon">&#127912;</div>
-                    <h3>Unique Stages</h3>
-                    <p>Hundreds of hand-crafted stages ranging from beginner-friendly to extreme difficulty. No two stages feel the same.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon">&#128260;</div>
-                    <h3>Regular Updates</h3>
-                    <p>Constant content drops with new stages, seasonal events, and community-requested features.</p>
+                    <div class="feature-icon">&#9889;</div>
+                    <h3>Roblox-Like Physics</h3>
+                    <p>Authentic movement mechanics that feel just like Roblox. Smooth jumping, precise momentum, and frame-perfect consistency you know and love.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon">&#128101;</div>
-                    <h3>Multiplayer</h3>
-                    <p>Race against friends in real-time. Create private lobbies or join public servers for competitive racing.</p>
+                    <h3>Cool Community</h3>
+                    <p>Join a passionate community of obby players and creators. Share tips, compete on leaderboards, and make friends who love obbies as much as you do.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <div class="feature-icon">&#128142;</div>
-                    <h3>Rewards System</h3>
-                    <p>Earn exclusive skins, trails, and badges by completing difficult challenges and seasonal events.</p>
+                    <div class="feature-icon">&#128737;</div>
+                    <h3>Cool Moderation</h3>
+                    <p>Fair and active moderation team keeps the community clean. Report system, content filters, and friendly mods ensure a safe space for everyone.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">&#128229;</div>
+                    <h3>Easy to Download</h3>
+                    <p>One-click installer. No complicated setup, no extra dependencies. Download, install, and play in under a minute. Works on Windows, Mac, and Linux.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">&#127912;</div>
+                    <h3>Make Your Obbies</h3>
+                    <p>Built-in stage editor with intuitive tools. Drag, drop, and customize every block. No coding required to build epic obstacle courses from scratch.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">&#128260;</div>
+                    <h3>Easy to Import Obbies</h3>
+                    <p>Import stages from files, share codes with friends, or browse the community library. Cross-compatible format makes sharing seamless.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section id="stats" class="stats">
         <div class="container">
             <div class="stats-grid">
@@ -625,7 +607,7 @@
                 </div>
                 <div class="stat-item reveal">
                     <div class="stat-number" data-target="1000000">0</div>
-                    <div class="stat-label">Visits</div>
+                    <div class="stat-label">Downloads</div>
                 </div>
                 <div class="stat-item reveal">
                     <div class="stat-number" data-target="50">0</div>
@@ -639,33 +621,29 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="play" class="cta">
+    <section id="download" class="cta">
         <div class="container">
             <div class="cta-box reveal">
                 <div class="cta-content">
                     <h2>Ready to <span class="gradient-text">Revive</span> the Challenge?</h2>
-                    <p>Join thousands of players already pushing their limits. Your obby journey starts now.</p>
-                    <a href="https://www.roblox.com" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
-                        <span>Launch on Roblox</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <p>Join thousands of players already pushing their limits. Download ORP and start your obby journey today.</p>
+                    <a href="#" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
+                        <span>Download for Free</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     </a>
+                    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">Available for Windows, macOS & Linux</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="logo">Obby Revival Project</div>
-        <p>A Roblox experience created with passion. Not affiliated with Roblox Corporation.</p>
+        <p>A standalone obby experience created with passion by the community.</p>
         <p style="margin-top: 1rem; opacity: 0.5;">&copy; 2026 ORP. All rights reserved.</p>
     </footer>
 
     <script>
-        // ============================================
-        // INTERACTIVE PARTICLE SYSTEM WITH MOUSE
-        // ============================================
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
@@ -697,57 +675,50 @@
 
             getRandomColor() {
                 const colors = [
-                    '99, 102, 241',   // primary
-                    '6, 182, 212',    // accent
-                    '139, 92, 246',   // accent-2
-                    '236, 72, 153',   // pink
-                    '34, 211, 238'    // cyan
+                    '99, 102, 241',
+                    '6, 182, 212',
+                    '139, 92, 246',
+                    '236, 72, 153',
+                    '34, 211, 238'
                 ];
                 return colors[Math.floor(Math.random() * colors.length)];
             }
 
             update() {
-                // Natural movement
                 this.angle += this.velocity;
                 this.x += Math.sin(this.angle) * 0.5 + this.speedX;
                 this.y += Math.cos(this.angle) * 0.5 + this.speedY;
 
-                // Wrap around screen
                 if (this.x > canvas.width) this.x = 0;
                 if (this.x < 0) this.x = canvas.width;
                 if (this.y > canvas.height) this.y = 0;
                 if (this.y < 0) this.y = canvas.height;
 
-                // MOUSE INTERACTION - Particles flee from cursor
                 if (mouse.x != null) {
                     let dx = mouse.x - this.x;
                     let dy = mouse.y - this.y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
-
+                    
                     if (distance < mouse.radius) {
                         const forceDirectionX = dx / distance;
                         const forceDirectionY = dy / distance;
                         const force = (mouse.radius - distance) / mouse.radius;
                         const directionX = forceDirectionX * force * this.density * -1;
                         const directionY = forceDirectionY * force * this.density * -1;
-
+                        
                         this.x += directionX;
                         this.y += directionY;
-
-                        // Increase opacity when near mouse
                         this.opacity = Math.min(1, this.opacity + 0.05);
                     } else {
-                        // Return to base opacity
                         if (this.opacity > 0.3) this.opacity -= 0.02;
                     }
                 }
 
-                // Click wave interaction
                 clickWaves.forEach(wave => {
                     let dx = this.x - wave.x;
                     let dy = this.y - wave.y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
-
+                    
                     if (Math.abs(distance - wave.radius) < 50) {
                         let force = (50 - Math.abs(distance - wave.radius)) / 50;
                         let angle = Math.atan2(dy, dx);
@@ -763,8 +734,7 @@
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
                 ctx.fill();
-
-                // Glow effect
+                
                 if (this.opacity > 0.6) {
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.size * 2, 0, Math.PI * 2);
@@ -795,7 +765,7 @@
                 ctx.strokeStyle = `rgba(99, 102, 241, ${this.opacity * 0.5})`;
                 ctx.lineWidth = 2;
                 ctx.stroke();
-
+                
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius * 0.7, 0, Math.PI * 2);
                 ctx.strokeStyle = `rgba(6, 182, 212, ${this.opacity * 0.3})`;
@@ -815,14 +785,13 @@
 
         function animateParticles() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            // Draw connections between nearby particles
+            
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     let dx = particles[i].x - particles[j].x;
                     let dy = particles[i].y - particles[j].y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
-
+                    
                     if (distance < 120) {
                         let opacity = (1 - distance / 120) * 0.15;
                         ctx.beginPath();
@@ -833,13 +802,12 @@
                         ctx.stroke();
                     }
                 }
-
-                // Connect to mouse
+                
                 if (mouse.x != null) {
                     let dx = particles[i].x - mouse.x;
                     let dy = particles[i].y - mouse.y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
-
+                    
                     if (distance < 200) {
                         let opacity = (1 - distance / 200) * 0.3;
                         ctx.beginPath();
@@ -852,7 +820,6 @@
                 }
             }
 
-            // Update and draw click waves
             for (let i = clickWaves.length - 1; i >= 0; i--) {
                 clickWaves[i].update();
                 clickWaves[i].draw();
@@ -861,30 +828,27 @@
                 }
             }
 
-            // Update and draw particles
             particles.forEach(p => {
                 p.update();
                 p.draw();
             });
-
-            // Draw mouse glow
+            
             if (mouse.x != null) {
                 ctx.beginPath();
                 ctx.arc(mouse.x, mouse.y, 20, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(99, 102, 241, 0.3)';
                 ctx.fill();
-
+                
                 ctx.beginPath();
                 ctx.arc(mouse.x, mouse.y, 40, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(99, 102, 241, 0.1)';
                 ctx.fill();
             }
-
+            
             requestAnimationFrame(animateParticles);
         }
         animateParticles();
 
-        // Mouse events
         window.addEventListener('mousemove', (e) => {
             mouse.x = e.x;
             mouse.y = e.y;
@@ -895,12 +859,10 @@
             mouse.y = null;
         });
 
-        // Click creates shockwave
         window.addEventListener('click', (e) => {
             clickWaves.push(new ClickWave(e.x, e.y));
         });
 
-        // Touch support
         window.addEventListener('touchmove', (e) => {
             mouse.x = e.touches[0].clientX;
             mouse.y = e.touches[0].clientY;
@@ -911,11 +873,8 @@
             mouse.y = null;
         });
 
-        // ============================================
-        // SCROLL REVEAL ANIMATION
-        // ============================================
         const revealElements = document.querySelectorAll('.reveal');
-
+        
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -926,11 +885,8 @@
 
         revealElements.forEach(el => revealObserver.observe(el));
 
-        // ============================================
-        // ANIMATED COUNTER
-        // ============================================
         const statNumbers = document.querySelectorAll('.stat-number');
-
+        
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -938,7 +894,7 @@
                     const duration = 2000;
                     const increment = target / (duration / 16);
                     let current = 0;
-
+                    
                     const updateCounter = () => {
                         current += increment;
                         if (current < target) {
@@ -948,7 +904,7 @@
                             entry.target.textContent = target.toLocaleString() + (target === 99 ? '%' : '+');
                         }
                     };
-
+                    
                     updateCounter();
                     counterObserver.unobserve(entry.target);
                 }
@@ -957,14 +913,11 @@
 
         statNumbers.forEach(stat => counterObserver.observe(stat));
 
-        // ============================================
-        // NAVBAR SCROLL EFFECT
-        // ============================================
         let lastScroll = 0;
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             const currentScroll = window.pageYOffset;
-
+            
             if (currentScroll > 100) {
                 nav.style.background = 'rgba(15, 15, 26, 0.95)';
                 nav.style.padding = '1rem 5%';
@@ -972,7 +925,7 @@
                 nav.style.background = 'rgba(15, 15, 26, 0.7)';
                 nav.style.padding = '1.5rem 5%';
             }
-
+            
             lastScroll = currentScroll;
         });
     </script>
